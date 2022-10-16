@@ -1,0 +1,31 @@
+Zad.5
+	public static int a(int n)
+	{
+		for (int i = 0; i <= n; i++)
+		{
+		if ((n==1)||(n==2))
+			return 1;
+		else
+			return a(n-1)+a(n-2);
+		}
+	}
+Zad.6
+        static double oblicz(int m, int x)
+        {
+            double w = Math.Pow(m, x);
+            return w;
+        }
+Zad.7
+        static string obl(int m)
+        {
+            string x = "";
+            while(m!=0)
+            {
+                if (m%2==0)
+                    x = "0" + x;
+                else
+                    x = "1" + x;
+                m = m / 2;
+            }
+            return x;
+        }
